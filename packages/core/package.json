@@ -1,0 +1,18 @@
+{
+  "name": "@creative-diary/core",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Framework-free domain logic for the creative diary, shared by the web app and (later) the Convex backend.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client"],
+    "paths": {
+      "styled-system/*": ["./styled-system/*"],
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "styled-system", "panda.config.ts", "vite.config.ts"]
+}
