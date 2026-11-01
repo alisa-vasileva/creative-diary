@@ -18,7 +18,9 @@ pnpm build       # apps/web/dist
 
 ## Deployment
 
-Every push to `main` builds the site and publishes it to GitHub Pages at <https://alisa-vasileva.github.io/creative-diary/> (`.github/workflows/deploy.yml`). Pages serves the site from `/creative-diary/`, so the workflow builds with `BASE_PATH=/creative-diary/`. Local builds default to `/`.
+The site is served by GitHub Pages from the `gh-pages` branch at <https://alisa-vasileva.github.io/creative-diary/>. Every push to `main` builds the site and pushes it to that branch (`.github/workflows/deploy.yml`). To deploy from your machine instead, run `pnpm deploy:web`.
+
+Pages serves the site from `/creative-diary/`, so deploys build with `BASE_PATH=/creative-diary/`. Local builds default to `/`.
 
 ## Layout
 

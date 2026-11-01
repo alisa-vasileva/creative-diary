@@ -10,7 +10,11 @@
     "dev": "pnpm --filter @creative-diary/web dev",
     "build": "pnpm --filter @creative-diary/web build",
     "preview": "pnpm --filter @creative-diary/web preview",
+    "deploy:web": "BASE_PATH=/creative-diary/ pnpm build && touch apps/web/dist/.nojekyll && gh-pages -d apps/web/dist --dotfiles",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
